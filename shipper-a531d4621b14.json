@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "shipper-246715",
+  "private_key_id": "a531d4621b1456026780f2eb952bb96c17203c7c",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDu+SOewFrSVtbf\n7V0kAiMKgOGbfHcrUwqUMhj9DKzPCnVBadF+EoOCSBr3avkyqj+RuZgh5nFO0Zkt\n8mRIAzol/ElrghZ/EB4y4o5+6FiW3pZTOa3CDIhxWUgfxAmxUB6IqNCIIlZvGKOk\nKDGD/C8e/4oz3LUx2YhIhttsH/ywBfO5TAd3aHwQd4BEo7OSl3JStEfVGEIw1Awi\nARw/Ii297Dzl+3FTX1dRAhIQeYTTwdXO5PWCv43aKfQvXY5yKZxez6HeQ+chDbRS\nLLZY3mbVg/bqywPWpsUQkMRF4QedQ1WUV4lYuGzaxiX50ZfYzUOSe4CwVII/WSIw\nQ/6lXyv/AgMBAAECggEAZS6Gpu5R5hJPq4NgduESvh1AqOljuavQ5Ftr2iTWPFl0\nuSwZP9SN6wklpdGczpdoEAbxg5UDL7iuL1acoCMBqVivK35qkQUdjDUB2Xj+HW8E\nXhujVvCgisGfOJfz9Kf0La+wj5teVm6rxtMf1/7cYrcW6IuQCpnMysySti66+jnR\nag+k8yiaCo0xXOGmnt59vEBGgLqwzq90bjqV10dT6cxzSWNkJA1/tdbaI1aOkSCZ\nsQxduzMf4EQ3+c/xFAZNkY6urYx65JMPQXXg2U07wk9nQVZ85bQIhqbNlnnMgGo7\nJ/cipLkbkn/80TaUrxqZ1HdElKy4HXm7JyBylfqMfQKBgQD9nFaVTLAX2z6eOXOI\nsjPK9PSU4BHBpVxJUUpbkFhtueworCFGUCPUEGdsM2igXGtzXu1g2Z332DY3ftZu\n/lFQHBRcyAYj/2ofRu9yvlHONS9+WFA8VdueliWCy7bcqwzbVYtoC/JChW+8PTbG\nrWfdPTqz89c+1ZuPGZb9rUr++wKBgQDxOX99iOe8axISNxMl4EEk3IrexlBTduWK\nmxphcAmrMSb6fgiFu/sdXpw1DxFO+IhuXpXXPylHjsSfqRjmR/DXkgUKjCro9gLP\nywp24huW+XeoRFcQehBkUQeCeEihnVo5/txE/H5/SZVbcufvk2d+nVB5TKNzVsFi\nM+lDpg5nzQKBgQCezV9V+4AkYA+0qcrTZKqTwpDIDApyVCYWbsV90kPc6VecHDR1\nv8a/ikoIcaRpDZXm1yESzRFiWUuRsmV5eNvXqs2BT2qw7cU4soVLNysoURtdJNWR\nAj4T7naskPz+7kiNquIxE5Ht33oYx8fd3kU0PpvchKpaWQ0gLOjkDbfxMwKBgQCO\nXvk4Bk1/j1IjHg5XFHxeXSw5P6K5IDtqCxEO4SlTuLbgsPImvEQBmY1oY3Q7v8QG\nIB0f5U9fxIuYEB16DIvBL5V6HDBXPpt6OMP8VociHCrbTTp1pxV1n71m68cyW8Sc\n5ibrMHsYdT2Js8/gPoee2wpcDTeLI3EPnMPYAXIPIQKBgQCRkRXqxd9ENa3Y7E96\nRSylUNaf1TCjJiTNFzoy1y6fkvWZtc7ibBV3e801jD1mle4IecAS/odm6um9OXY4\nCNFSBith9VX0c60PxIyaYx+8EA+b3TXAFqLp19Mg7l4L8o9VUdmzVwqTdKlIJkyf\n6HNY/kCvecNBgI0stv5z6649Qw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "shipper-google@shipper-246715.iam.gserviceaccount.com",
+  "client_id": "104330976825507842752",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/shipper-google%40shipper-246715.iam.gserviceaccount.com"
+}

@@ -1,0 +1,18 @@
+{
+  "ABERTO": {
+    "level": 0,
+    "label": "Aberto"
+  },
+  "CLIENTE": {
+    "level": 1,
+    "label": "Cliente"
+  },
+  "USUARIO": {
+    "level": 2,
+    "label": "Usuário"
+  },
+  "ADMINISTRADOR": {
+    "level": 3,
+    "label": "Administrador"
+  }
+}

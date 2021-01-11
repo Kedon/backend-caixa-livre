@@ -1,0 +1,55 @@
+swagger: "2.0"
+/login:
+  post:
+    tags:
+      - login
+    summary: Login by user and password
+    description: This can only be done by the logged in user.
+    operationId: JWTLogin
+    produces:
+      - application/json
+      - application/xml
+    parameters:
+    - in: body
+      name: body
+      description: Created login object
+      required: false
+      schema:
+        $ref: "#/definitions/login"
+    responses:
+      default:
+        description: successful operation
+/login/auth/facebook:
+  get:
+    tags:
+      - login
+    summary: Facebook Login
+    description: Only works in navegator.
+    operationId: FacebookLogin
+    produces:
+      - application/json
+    responses:
+      default:
+        description: successful operation
+securityDefinitions:
+  petstore_auth:
+    type: oauth2
+    authorizationUrl: "http://petstore.swagger.io/api/oauth/dialog"
+    flow: implicit
+    scopes:
+      "write:pets": modify pets in your account
+      "read:pets": read your pets
+  api_key:
+    type: apiKey
+    name: api_key
+    in: header
+definitions:
+  login:
+    required:
+      - password
+      - email
+    properties:
+      password:
+        type: string
+      email:
+        type: string
