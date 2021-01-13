@@ -74,7 +74,7 @@ module.exports.products = (admin, perPage, offset, section, department, startsWi
     LEFT JOIN ( SELECT sum(qtde) AS vendas, ean FROM Pds_Pedidos_Itens WHERE ${admin} AND token IN (SELECT token FROM Pds_Pedidos WHERE status != 'cancelado') GROUP BY ean ) ve ON (Prd_Produtos.ean = ve.ean)
     WHERE Prd_Produtos_Local.admin = ${admin} ${where.length > 0 ? ' AND ' +where.join(' AND ') : ''} ${group} ${order} ${pagination}`;
     
-    const total = `SELECT count(*) as rows, min(preco_tabela) AS min_price, max(preco_tabela) as max_price, min(preco_prom) AS min_price_prom, max(preco_prom) as max_price_prom FROM Prd_Produtos_Local ${where.length > 0 ? ' WHERE ' +where.join(' AND ') : ''} AND ean IN (SELECT ean FROM Prd_Produtos_Local WHERE admin = ${admin} AND status = 1)`;
+    const total = `SELECT count(*) as lines, min(preco_tabela) AS min_price, max(preco_tabela) as max_price, min(preco_prom) AS min_price_prom, max(preco_prom) as max_price_prom FROM Prd_Produtos_Local ${where.length > 0 ? ' WHERE ' +where.join(' AND ') : ''} AND ean IN (SELECT ean FROM Prd_Produtos_Local WHERE admin = ${admin} AND status = 1)`;
     const sections = `SELECT id, area, slug FROM Prd_Area WHERE id IN (SELECT area FROM Prd_Produtos_Local ${where.length > 0 ? ' WHERE ' +where.join(' AND ') : ''} )`
     const departments = `SELECT id_departamento, departamento, slug FROM Prd_Departamentos WHERE id_departamento IN (SELECT id_departamento FROM Prd_Produtos_Local ${where.length > 0 ? ' WHERE ' +where.join(' AND ') : ''} )`
     
@@ -103,7 +103,7 @@ module.exports.products = (admin, perPage, offset, section, department, startsWi
                 message: 'Listagem de produtos',
                 basePath: baseUrl,
                 data: rows,
-                totalRows: totalCount[0].rows,
+                totalRows: totalCount[0].lines,
                 sections: sectionsIncluded,
                 departments: departmentsIncluded,
                 prices: {
