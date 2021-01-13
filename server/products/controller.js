@@ -7,6 +7,7 @@ const uuidv1 = require('uuid/v1');
 
 module.exports.products = async (req, res) => {
   const {  perPage, offset, section, department, startsWith, alsoHave, notHave, orderBy, priceFrom, priceTo, searchTerm } = req.query
+  console.log(req.query)
   const admin = req.loggedUser.id
   try {
     let result = await service.products(admin, perPage, offset, section, department, startsWith, alsoHave, notHave, orderBy, priceFrom, priceTo, searchTerm);
