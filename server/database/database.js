@@ -34,7 +34,7 @@ const accessData = {
     databaseName: 'emporios_store',
     user: 'admin',
     pass: '12345678',
-    host: 'caixalivreemporio.cplntnesocg6.us-east-2.rds.amazonaws.com',
+    host: 'emporio.cplntnesocg6.us-east-2.rds.amazonaws.com',
     port: '3306',
 }
 
